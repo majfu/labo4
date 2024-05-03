@@ -1,6 +1,16 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 if [ "$1" = "--logs" ] && [ -z "$2" ]
+=======
+if [ "$1" = "--date" ]
+then
+	current_date=$(date)
+	echo $current_date
+fi
+
+if [ "$1" = "--logs" ]
+>>>>>>> logFilesBranch
 then
 	for ((i = 1; i <= 100; i++)); do
 		touch log$i.txt
