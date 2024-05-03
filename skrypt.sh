@@ -21,7 +21,7 @@ if [ "$1" = "--logs" ] && ! [[ "$2" =~ "^[0-9]+$" ]]; then
                 current_date=$(date)
                 echo "log$i.txt, skrypt.sh, $current_date" > log$i.txt
 	done
-else
+elif [ "$1" = "--logs" ]; then
 	echo "Invalid second argument"
 fi
 
