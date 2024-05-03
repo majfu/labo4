@@ -6,7 +6,7 @@ then
 	echo $current_date
 fi
 
-if [ "$1" = "--logs" ]
+if [ "$1" = "--logs" ] && [ -z "$2" ]
 then
 	for ((i = 1; i <= 100; i++)); do
 		touch log$i.txt
