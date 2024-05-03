@@ -21,11 +21,7 @@ if [[ "$1" = "--logs" || "$1" = "-l" ]] && ! [[ "$2" =~ "^[0-9]+$" ]]; then
                 current_date=$(date)
                 echo "log$i.txt, skrypt.sh, $current_date" > log$i.txt
 	done
-<<<<<<< HEAD
 elif [[ "$1" = "--logs" || "$1" = "-l" ]]; then
-=======
-elif [ "$1" = "--logs" ]; then
->>>>>>> 44ccec59a6fd6940caf49b6f2e58d36c6d90ee05
 	echo "Invalid second argument"
 fi
 
