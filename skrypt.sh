@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ "$1" = "--date" ]
+then
+	current_date=$(date)
+	echo $current_date
+fi
+
 if [ "$1" = "--logs" ]
 then
 	for ((i = 1; i <= 100; i++)); do
