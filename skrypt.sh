@@ -26,5 +26,5 @@ elif [[ "$1" = "--logs" || "$1" = "-l" ]]; then
 fi
 
 if [[ "$1" = "--help" || "$1" = "-h" ]]; then
-	echo "type --help, -h for options, --date, -d to display current date, --logs, -l with optional second numerical argument to create log files, if no second argument is provided 100 log files will be created"
+	echo "type --help, -h for options, --date, -d to display current date, --logs, -l, --error, -e, both with optional second numerical argument to create files, if no second argument is provided 100 files will be created"
 fi
